@@ -1,0 +1,53 @@
+/*Take it from the Brad Traversy's video "Product Landing Page | Build & Deploy | HTML & CSS"*/
+
+:root {
+    --primary-color: #2F2E41;
+    --secondary-color: #CCCCCC;
+    --overlay-color: #000000;
+  }
+  
+/* GOBAL ATRIBUTTES 
+********************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
+  }
+  
+a {
+    text-decoration: none;
+  }
+
+ul {
+    list-style-type: none;
+  }
+
+img {
+    width: 100%;
+  }
+
+
+  /* HOME/ABOUT ME 
+********************/
+
+
+  /* PROJECTS 
+********************/
+
+  /* CONTACT 
+********************/
+
+  /* FOOTER 
+********************/
