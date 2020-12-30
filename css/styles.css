@@ -17,30 +17,25 @@ html{
     margin: 0;
     padding: 0;
   }
-  
-
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
+    width: 100%;
   }
-  
 h1,
 h2,
 h3,
 h4 {
     line-height: 1.3;
   }
-  
 a, a:visited {
     text-decoration: none;
     display: inline-block;
     color: #000000;
   }
-
 ul {
     list-style-type: none;
   }
-
 img {
     width: 100%;
   }
@@ -52,9 +47,15 @@ img {
 
   /* NAVEGATION 
 ********************/
+nav {
+  width: 100%;
+}
 .navegation-top ul {
   display: flex;
   justify-content: flex-end;
+}
+.ham {
+  display: none;
 }
 .navegation-top ul a {
   margin-left: 32px;
@@ -70,31 +71,39 @@ img {
 
   /* HOME/ABOUT ME 
 ********************/
-header, .home {
+header {
   display: flex;
   justify-content: space-between;
   height: 413px;
+  width: 100%;
+}
+.home-text {
+  margin-top: 122px;
+  flex-basis: 60%;
 }
 header h1 {
   font-family: "Caveat";
   font-size: 103.14px;
   font-weight: 700;
-  width: 593px ;
+  width: 100% ;
 }
 header h2 {
   font-weight: normal;
   font-size: 36px;
   line-height: 44px;
-  width: 580px;
+  width: 80%;
 }
-.home-text {
+.home-image {
+  flex-basis: 35%;
+}
+.home-image img {
   margin-top: 122px;
+  width: 100%;
+  height: auto;
 }
-header img {
-  margin-top: 122px;
-  width: 378px;
-  height: 285px;
-}
+
+
+
 .about-me {
   height: 549px;
   display: flex;
@@ -104,6 +113,7 @@ header img {
   margin-top: 178px;
   font-size: 19.2269px;
   line-height: 34px;
+  width: 43%;
 }
 .about-text {
   max-width: 563px;
@@ -125,10 +135,10 @@ header img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-auto-rows: 1fr;
-  column-gap: 200px;
-  row-gap: 117px;
+  column-gap: 20%;
+  row-gap: 8%;
   margin-bottom: 150px;
+  width: 100%;
 }
 .project-1 {
   grid-column: 1/2;
@@ -170,6 +180,13 @@ header img {
   background-color: var(--primary-color);
   color: white;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  height: 43px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
 }
 .projects-link a:hover {
   background-color: rgba(47, 46, 65, .8);
@@ -179,9 +196,17 @@ header img {
 
   /* CONTACT 
 ********************/
-.contact {
+section.contact {
   height: 530px;
   background-color: var(--secondary-color);
+  width: 100%;
+}
+.container.home.contact-cont {
+  display: flex;
+}
+
+.contact .container div:first-of-type {
+  flex-basis: 70%;
 }
 .contact a {
   text-decoration: underline;
@@ -254,4 +279,67 @@ footer a:hover {
 .gratitude-message {
   text-align: right;
   grid-column: 9/12;
+}
+
+
+/* CELLPHONES
+********************/
+@media screen and (max-width:940px){
+  .ham {
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+    position: absolute;
+    background-color: transparent;
+    left: 90%;
+    top: 36px;
+    /* right: 20%; */
+    z-index: 1000;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .navegation-top {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    opacity: 100%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-out;
+  }
+  .navegation-top ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  .navegation-top ul a {
+    color: var(--secondary-color);
+  }
+  .navegation-top ul li a:hover, .navbar ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+  .showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+  }
+  .showNav {
+    /* show the menu. Goes in .navegation-top*/
+    transform: translateY(0);
+  }
+  .home-text {
+    flex-basis: 100%;
+  }
+  /****** HOME ******
+  *******************/
+  /* .home .home-image {
+    display: none;
+  } */
+
 }
