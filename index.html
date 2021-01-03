@@ -20,40 +20,47 @@
   <title>Bill Llach Bruges</title>
 </head>
   <body>
-    <header>
+    <header class="site-header">
+
     <!-- Navegation -->
-      <nav class="navbar navbar-expand-md  navbar-dark">
-        
+      <nav class="site-nav navbar navbar-expand-md navbar-dark py-4">
         <div class="container">
 
           <a class="navbar-brand" href="#page-top" id="page-top">BLB</a>
-          
-            <ul class="navbar-nav" >
-              <li class="nav-item" ><a class="nav-link" href="#about">About Me</a></li>
-              <li class="nav-item" ><a class="nav-link" href="#projects">Projects</a></li>
-              <li class="nav-item" ><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-          
-        </div>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
 
+          <div class="collapse navbar-collapse" id="navCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item d-flex justify-content-center" ><a class="nav-link px-4" href="#about">About Me</a></li>
+              <li class="nav-item d-flex justify-content-center" ><a class="nav-link px-4" href="#projects">Projects</a></li>
+              <li class="nav-item d-flex justify-content-center" ><a class="nav-link px-4" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
       </nav>
 
       <!-- Home -->
       
-        <div class="container">
-          <h1 class="">Bill Llach Bruges</h1>
-          <h2 class="">Front-end Developer</h2>
-          <button type="button" class="btn btn-primary">Get Started</button>
+        <div class="site-home container d-flex align-items-center text-center ">
+          <div class="container">
+            <h1 class="section-title">Bill Llach Bruges</h1>
+            <h2 class="section-subtitle">Front-end Developer</h2>
+            <a type="button" class="btn btn-primary btn-lg mt-4" href="#about">Get Started</a>
+          </div>
         </div>
     </header>
 
     <!-- About Me -->
 
-    <section id="about">
+    <section id="about" class="site-about text-center d-flex align-items-center">
       <div class="container">
         <!-- Background Gradient Black top to bottom white -->
         <h2>About Me</h2>
-        <p>Hola! I’m Bill Llach Bruges and I have a passion with making beautiful and useful websites. <br> 
+        <p>Hola! I’m Bill Llach Bruges and I have a passion with making beautiful and useful websites. 
         Gratuated from the Design and Development of Accesible Websites SENA's online course.</p>
       </div>
     </section>

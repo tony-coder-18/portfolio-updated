@@ -14,8 +14,44 @@ body {
 img {
     width: 100%;
   }
-
-
-header {
-  background: url(../images/bg-masthead.jpg);
+.site-header {
+  background: url(../images/bg-masthead-1.jpg);
+  background-size: cover;
+  background-position: center center;
 }
+
+/* NAVIGATION   */
+
+/* HOME */
+.site-header .site-home {
+  min-height: 87vh;
+}
+.site-home .section-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  /* Adding gradient to the title */
+  background: rgb(58, 58, 58);
+  background: linear-gradient(0deg, rgb(32, 32, 32) 0%, rgb(104, 104, 104) 86%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+.site-home .section-subtitle{
+  color: var(--almost-white);
+  opacity: 0.5;
+  font-size: 1.8rem;
+}
+
+/* About Me  */
+.site-about {
+  min-height: 80vh;
+  background: rgb(42,42,42);
+  background: linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+
+  color: var(--almost-white);
+}
+
