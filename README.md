@@ -1,6 +1,9 @@
 ## Portfolio Page 
 This is the repository for my updated (with new design) online portfolio. 
 
-The design was made by me in Figma.
+The design is inspired from the Start Bootstrap's template ["Grayscale"](https://startbootstrap.com/theme/grayscale) (I made a few changes to it) 
+and I coded it myself.
+
+
 
 All the Glory to God.

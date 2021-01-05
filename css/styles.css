@@ -73,6 +73,8 @@ img {
 .site-projects-container {
   background-color: #000000;
   color: var(--almost-white);
+  margin-top: 3rem;
+  margin-bottom: 9rem;
 }
 
 .site-projects p {
@@ -80,4 +82,48 @@ img {
 }
 
 
-/* For text inprojects to be centered for md and sm devices */
+/* Contact */
+
+.site-contact {
+  background: url(../images/bg-signup.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  letter-spacing: 0.1em;
+
+  min-height: 90vh;
+}
+.site-contact h3 {
+  font-size: 1rem;
+}
+.site-contact h2 {
+  color: var(--almost-white);
+}
+/* .contact-text{
+  max-width: 90%;
+} */
+
+.cards-container {
+  min-height: 50vh;
+}
+.site-contact hr {
+  height: 2px;
+  width: 50%;
+}
+.contact-card {
+  min-height: 35vh;
+  border-radius: 5px;
+  border-bottom: #17a2b8 3px solid;
+  border-collapse: collapse;
+}
+
+/* Footer  */
+.site-footer {
+  background-color: var(--black);
+
+  color: var(--almost-white);
+
+  min-height: 40vh;
+}
+
