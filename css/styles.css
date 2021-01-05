@@ -10,6 +10,7 @@
 ********************/
 body {
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
   }
 img {
     width: 100%;
@@ -54,4 +55,29 @@ img {
 
   color: var(--almost-white);
 }
+.section-title {
+  font-size: 2.8rem;
+}
+.test {
+  background-color: red;
+}
 
+
+/* Projects */
+.site-projects {
+  background-color: var(--almost-white);
+  min-height: 120vh;
+  font-size: 0.9rem;
+}
+
+.site-projects-container {
+  background-color: #000000;
+  color: var(--almost-white);
+}
+
+.site-projects p {
+  color:rgba(248, 249, 250, 0.6);
+}
+
+
+/* For text inprojects to be centered for md and sm devices */
