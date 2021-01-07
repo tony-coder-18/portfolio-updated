@@ -83,6 +83,7 @@ img {
 }
 
 
+
 /* Contact */
 
 .site-contact {
@@ -126,5 +127,9 @@ img {
   color: var(--almost-white);
 
   min-height: 40vh;
+}
+
+.site-footer .btn {
+  border-radius: 100%;
 }
 
