@@ -23,6 +23,31 @@ img {
 
 /* NAVIGATION   */
 
+.button-expand {
+  background-color: transparent;
+  box-shadow: none;
+  position: absolute;
+  margin-left: 77%;
+  z-index: 120;
+  
+}
+@media (max-width: 768px) {
+  .button-expand{
+    margin-left: 85%;
+  }
+}
+.navb-cont {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  max-width: 100%;
+  z-index: 100;
+  font-size: 2.5rem;
+}
+
 /* HOME */
 .site-header .site-home {
   min-height: 87vh;
@@ -30,6 +55,7 @@ img {
 .site-home .section-title {
   font-size: 3rem;
   text-transform: uppercase;
+  
 
   /* Adding gradient to the title */
   background: rgb(58, 58, 58);
@@ -51,8 +77,8 @@ img {
 /* About Me  */
 .site-about {
   min-height: 80vh;
-  background: rgb(42,42,42);
-  background: linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+  background: rgb(0,0,0,1);
+  /* background: linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%); */
 
   color: var(--almost-white);
 }
@@ -66,7 +92,7 @@ img {
 
 /* Projects */
 .site-projects {
-  background-color: var(--almost-white);
+  background-color: var(--black);
   min-height: 120vh;
   font-size: 0.9rem;
 }
@@ -132,4 +158,10 @@ img {
 .site-footer .btn {
   border-radius: 100%;
 }
+
+/* For animation hamgurger */
+.hidden {
+  display: none;
+}
+
 
